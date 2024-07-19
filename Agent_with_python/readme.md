@@ -1,4 +1,4 @@
-# Agen with python
+# Agent with python
 To better understand how agents work, I recreate the agent functionality by using python with tutorials,
 
 and use groq model to run the resault.
