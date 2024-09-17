@@ -7,7 +7,7 @@
 # 2. VST presets generator (in progress: data collection)
 ![alt text](ai_vst_presets_generator.png)
 ## Project example
-[![alt text](image-2.png)](https://youtu.be/4nLw3EKdRZY?si=5HpAv0V0OC1NXZMK)
+[![alt text](image-2.png)](https://youtu.be/wE6-RZyjgnQ?si=gaV0-UR_K7ixG79T)
 
 # 3. Federated MMoE
 ![alt text](fed_mmoe.png)
