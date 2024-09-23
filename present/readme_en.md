@@ -20,8 +20,9 @@ This project is currently under construction, with the main goal of training an 
 
 # 3. Federated MMoE
 This is the main topic of my master's thesis research, aiming to develop a recommendation system that maximizes cache space utilization while considering user security and privacy issues. In this research, we use Federated learning to solve user security and privacy issues and accurately predict the probability of each user accessing movies through the MMoE model architecture. The process is:
-1. 本地訓練：每一個本地伺服器會在本地做邊端訓練
-2. 中心平均：本地模型訓練幾輪後，會將模型參數上傳至中心服務器，經由中心服務器平均拿到的模型參數後，再廣播給每一個本地模型
-3. 本地再訓練：拿到平均的參數後，本地模型會將平均的模型參數取代下圖中紅色區塊的部分，其他的部分則是保留原本的參數，接著再對模型做訓練，重複步驟2、3直到收斂
+This is the main topic of my master's thesis research, aiming to develop a recommendation system that maximizes cache space utilization while considering user security and privacy issues. In this research, we use Federated learning to solve user security and privacy issues and accurately predict the probability of each user accessing movies through the MMoE model architecture. The process is:
+1. Local Training: Each local server trains the model locally.
+2. Central Averaging: After training the local model for several rounds, the model parameters are uploaded to the central server, where the central server averages the received model parameters and broadcasts them to each local model.
+3. Local Re-training: After receiving the averaged parameters, the local model replaces the red block in the diagram with the averaged model parameters, keeping the other parts unchanged, and then continues to train the model, repeating steps 2 and 3 until convergence.
 
-![federated mmoe diagram](fed_mmoe.png)
+![Federated MMoE Diagram](fed_mmoe.png)
